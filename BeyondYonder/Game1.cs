@@ -10,6 +10,7 @@ using Microsoft.Xna.Framework.Media;
 
 using BeyondYonder.src.Game_Screens;
 using BeyondYonder.src;
+using BeyondYonder.src.Base_Classes;
 
 namespace BeyondYonder
 {
@@ -24,7 +25,8 @@ namespace BeyondYonder
         
         GameStateManager _gameStateManager;
         public TitleScreen TitleScreen;
-        public StartMenuScreen StartMenuScreen; 
+        public StartMenuScreen StartMenuScreen;
+        public GridScreen GridScreen; 
 
         const int screenWidth = 1366;
         const int screenHeight = 768;
@@ -38,13 +40,14 @@ namespace BeyondYonder
             _graphics = new GraphicsDeviceManager(this);
             _graphics.PreferredBackBufferWidth = screenWidth;
             _graphics.PreferredBackBufferHeight = screenHeight;
-
+            _graphics.IsFullScreen = false;
             ScreenRectangle = new Rectangle(
                  0,
                  0,
                  screenWidth,
                  screenHeight);
 
+            _graphics.ApplyChanges();
             Content.RootDirectory = "Content";
 
             Components.Add(new InputHandler(this));
@@ -52,8 +55,10 @@ namespace BeyondYonder
             _gameStateManager = new GameStateManager(this);
             Components.Add(_gameStateManager);
             TitleScreen = new TitleScreen(this, _gameStateManager);
-            StartMenuScreen = new StartMenuScreen(this, _gameStateManager); 
-            _gameStateManager.ChangeState(TitleScreen);
+            StartMenuScreen = new StartMenuScreen(this, _gameStateManager);
+            GridScreen = new GridScreen(this, _gameStateManager);
+            //_gameStateManager.ChangeState(TitleScreen);
+            _gameStateManager.ChangeState(GridScreen);
         }
 
         /// <summary>
@@ -77,7 +82,7 @@ namespace BeyondYonder
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             SpriteBatch = new SpriteBatch(GraphicsDevice);
-
+            //map.LoadMap();
             // TODO: use this.Content to load your game content here
         }
 
@@ -112,9 +117,8 @@ namespace BeyondYonder
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
-
             // TODO: Add your drawing code here
-
+            
             base.Draw(gameTime);
         }
     }

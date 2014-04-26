@@ -18,11 +18,11 @@ namespace BeyondYonder.src.Base_Classes
             LargeTall = 5,
             LargeLong = 6,
             HugeTall = 7,
-            Huge = 8,
-            Gargantuan = 9,
-            Gargantuan = 10,
-            Gargantuan = 11,
-            Gargantuan = 12
+            HugeLong = 8,
+            GargantuanTall = 9,
+            GargantuanLong = 10,
+            ColossalTall = 11,
+            ColossalLong = 12
         }
 
         protected int strengthScore = 10;
@@ -64,13 +64,13 @@ namespace BeyondYonder.src.Base_Classes
 
         public int InitiativeBonus
         {
-            get { return initiativeBonus + DexMod; }
+            get { return initiativeBonus; }
             set { initiativeBonus = value; }
         }
 
         public int TotalInitiative
         {
-            get { return InitiativeBonus + Initiative; }
+            get { return InitiativeBonus + DexMod; }
         }
 
     }

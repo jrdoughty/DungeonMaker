@@ -132,10 +132,12 @@
   <ItemGroup>
     <Compile Include="src\Base Classes\Actor.cs" />
     <Compile Include="src\Base Classes\BaseGameState.cs" />
+    <Compile Include="src\Base Classes\Map.cs" />
     <Compile Include="src\ControlManager.cs" />
     <Compile Include="src\Controls\Label.cs" />
     <Compile Include="src\Controls\LinkLabel.cs" />
     <Compile Include="src\Die.cs" />
+    <Compile Include="src\Game Screens\GridScreen.cs" />
     <Compile Include="src\Game Screens\StartMenuScreen.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Game1.cs" />
@@ -152,7 +154,9 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <Content Include="Content\GameScreenBackground.png" />
     <None Include="BeyondYonder_TemporaryKey.pfx" />
+    <Content Include="Content\Burial7.jpg" />
     <Content Include="Content\Fonts\Segue.xnb">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
