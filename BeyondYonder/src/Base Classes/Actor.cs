@@ -29,6 +29,7 @@ namespace BeyondYonder.src.Base_Classes
         protected int movementSpeed;
         protected int initiativeBonus = 0;
         protected bool prone;
+        private Random random = new Random();
 
         protected Guid characterID;
 
@@ -78,10 +79,9 @@ namespace BeyondYonder.src.Base_Classes
             set { initiativeBonus = value; }
         }
 
-        public int D20Roll()
+        public int DieRoll(int dieType)
         {
-            Random random = new Random();
-            return random.Next(0, 20);
+            return random.Next(0, dieType);
         }
     }
 }
