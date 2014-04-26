@@ -8,13 +8,13 @@
     <PackageIdentityName>d29a25ef-0af3-4439-a9b8-0af590ebb600</PackageIdentityName>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\bin\Windows8\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\John\Documents\DungeonMaker\BeyondYonder\bin\Windows8\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\bin\Windows8\Debug\BeyondYonder.exe">
+    <AppxPackagedFile Include="C:\Users\John\Documents\DungeonMaker\BeyondYonder\bin\Windows8\Debug\BeyondYonder.exe">
       <PackagePath>BeyondYonder.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\MSBuild\..\MonoGame\v3.0\Assemblies\Windows8\MonoGame.Framework.dll">
@@ -41,29 +41,35 @@
     <AppxPackagedFile Include="C:\Program Files\MSBuild\..\MonoGame\v3.0\Assemblies\Windows8\SharpDX.XInput.dll">
       <PackagePath>SharpDX.XInput.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\Content\Fonts\Segue.xnb">
-      <PackagePath>Content\Fonts\Segue.xnb</PackagePath>
+    <AppxPackagedFile Include="C:\Users\John\Documents\DungeonMaker\BeyondYonder\Content\GameScreenBackground.png">
+      <PackagePath>Content\GameScreenBackground.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\Content\Background.png">
+    <AppxPackagedFile Include="C:\Users\John\Documents\DungeonMaker\BeyondYonder\Content\Background.png">
       <PackagePath>Content\Background.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\Assets\Logo.png">
+    <AppxPackagedFile Include="C:\Users\John\Documents\DungeonMaker\BeyondYonder\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\Assets\SmallLogo.png">
+    <AppxPackagedFile Include="C:\Users\John\Documents\DungeonMaker\BeyondYonder\Assets\SmallLogo.png">
       <PackagePath>Assets\SmallLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\Assets\SplashScreen.png">
+    <AppxPackagedFile Include="C:\Users\John\Documents\DungeonMaker\BeyondYonder\Assets\SplashScreen.png">
       <PackagePath>Assets\SplashScreen.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\John\Documents\DungeonMaker\BeyondYonder\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\bin\Windows8\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\John\Documents\DungeonMaker\BeyondYonder\Content\Burial7.jpg">
+      <PackagePath>Content\Burial7.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\John\Documents\DungeonMaker\BeyondYonder\Content\Fonts\Segue.xnb">
+      <PackagePath>Content\Fonts\Segue.xnb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\John\Documents\DungeonMaker\BeyondYonder\bin\Windows8\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

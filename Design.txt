@@ -1,0 +1,29 @@
+Initiative system
+
+	Must be able to enroll players and non-player characters in an initiative system that keeps track of who has the active turn. System must allow reorganization of initiative and the removal of characters that no longer have a turn in the encounter.
+
+	Characters should be able to be marked as incapacitated. When incapacitated a character does not have a turn until the flag is removed (eg being knocked out and then revived). at that point they will have the same turn they previously occupied in the initiative order.
+
+	Stretch: Initiatives begin by having each PC/NPC 'roll for initiative' If done outside the context of the app, The DM should be able to enroll each PC/NPC and arrange the order. Doing a 'quick setup' will see the program do a initiative roll for each PC/NPC and place them in the initiative system by this priority order: highest roll+totaliniativebonus, highest totalinitiativebonus, random order for any further ties.
+
+UI
+	Left bar:
+		Should have the PCs at all times. 
+		When an Encounter starts this should turn to the 'initiative tracker.' When this becomes the iniative tracker, the DM should be able to drag in NPCs from the bottom bar and rearrage the order to suit the encounter's initiative. At the end of the encounter, this should empty of NPCs and go back to the PC list.
+		Encounters should be triggered by pressing a start encounter button at the bottom left corner. Which will become the end encounter button. The end encounter button will flush the encounter and bring back the PC bar as it was
+
+
+	Bottom bar:
+		Should have a list of available NPCs. 
+		Stretch: be able to reorganize list of NPCs and add/remove new NPCs
+
+Strech
+
+Grid
+
+	DM must be able to:
+		grab characters from the side bar
+		place characters on a grid
+		characters must have a size on the grid reflective of their size category
+		move players around the map by clicking and dragging (touch and drag for mobile)
+		Stretch: Load Maps as tile maps, or as one large image placed under the grid.

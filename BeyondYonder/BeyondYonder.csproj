@@ -130,20 +130,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="src\Base Classes\Actor.cs" />
     <Compile Include="src\Base Classes\BaseGameState.cs" />
-    <Compile Include="src\Base Classes\Interaction.cs" />
-    <Compile Include="src\Base Classes\Inventory.cs" />
-    <Compile Include="src\Base Classes\Item.cs" />
-    <Compile Include="src\Base Classes\NPC.cs" />
+    <Compile Include="src\Base Classes\Map.cs" />
     <Compile Include="src\ControlManager.cs" />
     <Compile Include="src\Controls\Label.cs" />
     <Compile Include="src\Controls\LinkLabel.cs" />
-    <Compile Include="src\ConversationSystem\Conversation.cs" />
-    <Compile Include="src\ConversationSystem\ConversationManager.cs" />
-    <Compile Include="src\ConversationSystem\Dialog.cs" />
-    <Compile Include="src\Game Screens\OptionsScreen.cs" />
+    <Compile Include="src\Die.cs" />
+    <Compile Include="src\Game Screens\GridScreen.cs" />
     <Compile Include="src\Game Screens\StartMenuScreen.cs" />
-    <Compile Include="src\Game Screens\StartScreen.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -153,12 +148,15 @@
     <Compile Include="src\GameComponents\GameState.cs" />
     <Compile Include="src\GameComponents\InputHandler.cs" />
     <Compile Include="src\GameStateManager.cs" />
+    <Compile Include="src\InitiativeSystem\InitiativeSystem.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <Content Include="Content\GameScreenBackground.png" />
     <None Include="BeyondYonder_TemporaryKey.pfx" />
+    <Content Include="Content\Burial7.jpg" />
     <Content Include="Content\Fonts\Segue.xnb">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
