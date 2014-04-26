@@ -29,29 +29,34 @@ namespace BeyondYonder.src.Base_Classes
         protected int movementSpeed;
         protected bool prone;
         
-        public string GetName()
+        public string Name
         {
-            return name;
+            get { return name; }
+            set { name = value; }
+        }
+        public string Race
+        {
+
+            get { return race; }
+            set { race = value; }
         }
 
-        public string GetRace()
+        public int Size
         {
-            return race;
+            get { return size; }
+            set { size = value; }
         }
 
-        public int GetSize()
+        public int MovementSpeed
         {
-            return size;
+            get { return movementSpeed; }
+            set { movementSpeed = value; }
         }
 
-        public int GetMovementSpeed()
+        public bool Prone
         {
-            return movementSpeed;
-        }
-
-        public bool IsPlayerProne()
-        {
-            return prone;
+            get { return prone; }
+            set { prone = value; }
         }
 
     }
