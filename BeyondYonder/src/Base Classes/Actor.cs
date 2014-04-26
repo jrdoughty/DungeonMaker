@@ -71,5 +71,11 @@ namespace BeyondYonder.src.Base_Classes
             set { initiativeBonus = value; }
         }
 
+        public int D20Roll()
+        {
+            Random random = new Random();
+            return random.Next(0, 20);
+             
+        }
     }
 }
