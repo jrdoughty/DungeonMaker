@@ -1,0 +1,10 @@
+c:\users\jmwatson\documents\visual studio 2013\Projects\DungeonMaker\DungeonMaker\bin\WindowsGL\Debug\SDL.dll
+c:\users\jmwatson\documents\visual studio 2013\Projects\DungeonMaker\DungeonMaker\bin\WindowsGL\Debug\DungeonMaker.exe
+c:\users\jmwatson\documents\visual studio 2013\Projects\DungeonMaker\DungeonMaker\bin\WindowsGL\Debug\DungeonMaker.pdb
+c:\users\jmwatson\documents\visual studio 2013\Projects\DungeonMaker\DungeonMaker\bin\WindowsGL\Debug\Lidgren.Network.dll
+c:\users\jmwatson\documents\visual studio 2013\Projects\DungeonMaker\DungeonMaker\bin\WindowsGL\Debug\MonoGame.Framework.dll
+c:\users\jmwatson\documents\visual studio 2013\Projects\DungeonMaker\DungeonMaker\bin\WindowsGL\Debug\OpenTK.dll
+c:\users\jmwatson\documents\visual studio 2013\Projects\DungeonMaker\DungeonMaker\bin\WindowsGL\Debug\Tao.Sdl.dll
+c:\users\jmwatson\documents\visual studio 2013\Projects\DungeonMaker\DungeonMaker\obj\x86\Debug\DungeonMaker.csprojResolveAssemblyReference.cache
+c:\users\jmwatson\documents\visual studio 2013\Projects\DungeonMaker\DungeonMaker\obj\x86\Debug\DungeonMaker.exe
+c:\users\jmwatson\documents\visual studio 2013\Projects\DungeonMaker\DungeonMaker\obj\x86\Debug\DungeonMaker.pdb
