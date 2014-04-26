@@ -37,7 +37,7 @@ namespace BeyondYonder.src.Base_Classes
         public string Race { get; set; }
         public int Size { get; set; }
         public int MovementSpeed { get; set; }
-        public bool Prone { get; set; }
+        public bool Incapacitated { get; set; }
         public int Initiative { get; set; }
 
         public int DexMod
