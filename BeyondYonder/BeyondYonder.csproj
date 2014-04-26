@@ -142,6 +142,7 @@
     <Compile Include="src\ConversationSystem\Conversation.cs" />
     <Compile Include="src\ConversationSystem\ConversationManager.cs" />
     <Compile Include="src\ConversationSystem\Dialog.cs" />
+    <Compile Include="src\Die.cs" />
     <Compile Include="src\Game Screens\OptionsScreen.cs" />
     <Compile Include="src\Game Screens\StartMenuScreen.cs" />
     <Compile Include="src\Game Screens\StartScreen.cs" />
