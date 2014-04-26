@@ -21,7 +21,9 @@ Strech
 
 Grid
 
-DM must be able to:
-grab characters from the side bar
-place characters on a grid
-move players around the map by clicking and dragging (touch and drag for mobile)
+	DM must be able to:
+		grab characters from the side bar
+		place characters on a grid
+		characters must have a size on the grid reflective of their size category
+		move players around the map by clicking and dragging (touch and drag for mobile)
+		Stretch: Load Maps as tile maps, or as one large image placed under the grid.

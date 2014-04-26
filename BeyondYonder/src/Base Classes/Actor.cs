@@ -8,6 +8,23 @@ namespace BeyondYonder.src.Base_Classes
 {
     abstract class Actor
     {
+        public enum SizeCat
+        {
+            Fine = 0,
+            Diminuative = 1,
+            Tiny = 2,
+            Small = 3,
+            Medium = 4,
+            LargeTall = 5,
+            LargeLong = 6,
+            HugeTall = 7,
+            Huge = 8,
+            Gargantuan = 9,
+            Gargantuan = 10,
+            Gargantuan = 11,
+            Gargantuan = 12
+        }
+
         protected int strengthScore = 10;
         protected int dexterityScore = 10;
         protected int constitutionScore = 10;
