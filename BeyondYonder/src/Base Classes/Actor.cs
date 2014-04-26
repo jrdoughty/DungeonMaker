@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BeyondYonder.src.Base_Classes
 {
-    abstract class Actor
+    public abstract class Actor
     {
         public enum SizeCat
         {

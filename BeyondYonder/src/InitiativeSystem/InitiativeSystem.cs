@@ -1,9 +1,6 @@
 ﻿using BeyondYonder.src.Base_Classes;
-using System;
+using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BeyondYonder.src.InitiativeSystem
 {
@@ -12,7 +9,9 @@ namespace BeyondYonder.src.InitiativeSystem
         private static InitiativeSystem _instance = null;
 
         private List<Actor> _actors;
-        public List<Actor> Actors { get; }
+        public List<Actor> Actors { get { return _actors; } }
+
+        private IEnumerator _iterator;
 
         public static InitiativeSystem Instance()
         {
@@ -23,47 +22,73 @@ namespace BeyondYonder.src.InitiativeSystem
             return _instance;
         }
 
-        private InitiativeSystem() { _actors = new List<Actor>(); }
+        private InitiativeSystem()
+        {
+            _actors = new List<Actor>();
+            _iterator = _actors.GetEnumerator();
+        }
 
         public void AddActor(Actor ao)
         {
-            if (Actors.Count == 0)
+            if (_actors.Count == 0)
             {
-                Actors.Add(ao);
+                _actors.Add(ao);
                 return;
             }
 
             int index = 0;
-            foreach (Actor a in Actors)
+            foreach (Actor a in _actors)
             {
-                if (a.Initiative >= ao.Initiative)
+                if (a.TotalInitiative >= ao.TotalInitiative)
                 {
                     index++;
                 }
             }
 
-            if (index == Actors.Count)
+            if (index == _actors.Count)
             {
-                Actors.Add(ao);
+                _actors.Add(ao);
             }
             else
             {
-                Actors.Insert(index, ao);
+                _actors.Insert(index, ao);
             }
         }
 
         public void MoveActor(Actor ao, int index)
         {
-            Actors.Remove(ao);
+            _actors.Remove(ao);
             
-            if (index >= Actors.Count)
+            if (index >= _actors.Count)
             {
-                Actors.Add(ao);
+                _actors.Add(ao);
             }
             else
             {
-                Actors.Insert(index, ao);
+                _actors.Insert(index, ao);
             }
+        }
+
+        public bool RemoveActor(Actor ao)
+        {
+            return _actors.Remove(ao);
+        }
+
+        public Actor GetNextActor()
+        {
+            // If we are past the end of the array then we reset to the first in line.
+            if (_iterator.MoveNext())
+            {
+                _iterator.Reset();
+                _iterator.MoveNext();
+            }
+            return (Actor)_iterator.Current;
+        }
+
+        public void NewEncounter()
+        {
+            _actors = new List<Actor>();
+            _iterator = _actors.GetEnumerator();
         }
     }
 }
