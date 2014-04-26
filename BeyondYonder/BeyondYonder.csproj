@@ -130,6 +130,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="src\Base Classes\Actor.cs" />
     <Compile Include="src\Base Classes\BaseGameState.cs" />
     <Compile Include="src\Base Classes\Interaction.cs" />
     <Compile Include="src\Base Classes\Inventory.cs" />
