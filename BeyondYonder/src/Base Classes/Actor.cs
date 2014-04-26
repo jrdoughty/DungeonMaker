@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BeyondYonder.src.Base_Classes
 {
-    class Actor
+    abstract class Actor
     {
         protected string name;
         protected string race;
@@ -30,14 +30,21 @@ namespace BeyondYonder.src.Base_Classes
         protected int initiativeBonus = 0;
         protected bool prone;
 
+        protected Guid characterID;
+
+        public Guid CharacterID
+        {
+            get { return characterID; }
+        }
+
         public string Name
         {
             get { return name; }
             set { name = value; }
         }
+
         public string Race
         {
-
             get { return race; }
             set { race = value; }
         }
@@ -75,7 +82,6 @@ namespace BeyondYonder.src.Base_Classes
         {
             Random random = new Random();
             return random.Next(0, 20);
-             
         }
     }
 }
