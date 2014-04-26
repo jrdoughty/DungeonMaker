@@ -12,23 +12,24 @@ namespace BeyondYonder.src.Base_Classes
         protected string race;
         protected int size;
 
-        //protected int strengthScore;
-        //protected int dexterityScore;
-        //protected int constitutionScore;
-        //protected int intellegenceScore;
-        //protected int wisdomScore;
-        //protected int charismaScore;
+        protected int strengthScore = 10;
+        protected int dexterityScore = 10;
+        protected int constitutionScore = 10;
+        protected int intellegenceScore = 10;
+        protected int wisdomScore = 10;
+        protected int charismaScore = 10;
 
-        //protected int strengthScoreAdj;
-        //protected int dexterityScoreAdj;
-        //protected int constitutionScoreAdj;
-        //protected int intellegenceScoreAdj;
-        //protected int wisdomScoreAdj;
-        //protected int charismaScoreAdj;
+        protected int strengthScoreAdj = 0;
+        protected int dexterityScoreAdj = 0;
+        protected int constitutionScoreAdj = 0;
+        protected int intellegenceScoreAdj = 0;
+        protected int wisdomScoreAdj = 0;
+        protected int charismaScoreAdj = 0;
 
         protected int movementSpeed;
+        protected int initiativeBonus = 0;
         protected bool prone;
-        
+
         public string Name
         {
             get { return name; }
@@ -57,6 +58,17 @@ namespace BeyondYonder.src.Base_Classes
         {
             get { return prone; }
             set { prone = value; }
+        }
+
+        public int DexMod
+        {
+            get { return (dexterityScore - 10) / 2; }
+        }
+
+        public int InitiativeBonus
+        {
+            get { return initiativeBonus + DexMod; }
+            set { initiativeBonus = value; }
         }
 
     }
