@@ -153,6 +153,7 @@
     <Compile Include="src\GameComponents\GameState.cs" />
     <Compile Include="src\GameComponents\InputHandler.cs" />
     <Compile Include="src\GameStateManager.cs" />
+    <Compile Include="src\InitiativeSystem\InitiativeSystem.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
