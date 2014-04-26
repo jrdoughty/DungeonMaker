@@ -1,0 +1,98 @@
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\obj\Debug\BeyondYonder.csprojResolveAssemblyReference.cache
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\bin\Windows8\Debug\BeyondYonder.exe
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\bin\Windows8\Debug\BeyondYonder.pdb
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\bin\Windows8\Debug\resources.pri
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\bin\Windows8\Debug\AppxManifest.xml
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\bin\Windows8\Debug\BeyondYonder.build.appxrecipe
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\bin\Windows8\Debug\MonoGame.Framework.dll
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\bin\Windows8\Debug\SharpDX.Direct2D1.dll
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\bin\Windows8\Debug\SharpDX.Direct3D11.dll
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\bin\Windows8\Debug\SharpDX.dll
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\bin\Windows8\Debug\SharpDX.DXGI.dll
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\bin\Windows8\Debug\SharpDX.MediaFoundation.dll
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\bin\Windows8\Debug\SharpDX.XAudio2.dll
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\bin\Windows8\Debug\SharpDX.XInput.dll
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\bin\Windows8\Debug\MonoGame.Framework.xml
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\bin\Windows8\Debug\SharpDX.xml
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\bin\Windows8\Debug\SharpDX.XInput.xml
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\bin\Windows8\Debug\SharpDX.Direct2D1.xml
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\bin\Windows8\Debug\SharpDX.Direct3D11.xml
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\bin\Windows8\Debug\SharpDX.DXGI.xml
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\bin\Windows8\Debug\SharpDX.MediaFoundation.xml
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\bin\Windows8\Debug\SharpDX.XAudio2.xml
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\obj\Debug\BeyondYonder.exe
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\obj\Debug\BeyondYonder.pdb
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\obj\Debug\SharpDX\en-us\SharpDX.Properties.Resources.resw
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\obj\Debug\BeyondYonder.csproj.GenerateResource.Cache
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\obj\Debug\SharpDX\layout.resfiles
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\obj\Debug\SharpDX\layout.resfiles.intermediate
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\obj\Debug\SharpDX\Resources.resfiles
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\obj\Debug\SharpDX\Resources.resfiles.intermediate
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\obj\Debug\SharpDX\pri.resfiles
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\obj\Debug\SharpDX\pri.resfiles.intermediate
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\obj\Debug\SharpDX\priconfig.xml
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\obj\Debug\SharpDX\priconfig.xml.intermediate
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\obj\Debug\SharpDX.pri
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\obj\Debug\SharpDX\qualifiers.txt
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\obj\Debug\priconfig.xml
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\obj\Debug\priconfig.xml.intermediate
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\obj\Debug\layout.resfiles
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\obj\Debug\layout.resfiles.intermediate
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\obj\Debug\resources.resfiles
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\obj\Debug\resources.resfiles.intermediate
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\obj\Debug\pri.resfiles
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\obj\Debug\pri.resfiles.intermediate
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\obj\Debug\qualifiers.txt
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\obj\Debug\qualifiers.txt.intermediate
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\John\Documents\Visual Studio 2013\Projects\BeyondYonder\BeyondYonder\obj\Debug\ProjectArchitectures.txt
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\bin\Windows8\Debug\BeyondYonder.exe
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\bin\Windows8\Debug\BeyondYonder.pdb
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\bin\Windows8\Debug\resources.pri
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\bin\Windows8\Debug\AppxManifest.xml
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\bin\Windows8\Debug\BeyondYonder.build.appxrecipe
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\bin\Windows8\Debug\MonoGame.Framework.dll
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\bin\Windows8\Debug\SharpDX.Direct2D1.dll
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\bin\Windows8\Debug\SharpDX.Direct3D11.dll
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\bin\Windows8\Debug\SharpDX.dll
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\bin\Windows8\Debug\SharpDX.DXGI.dll
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\bin\Windows8\Debug\SharpDX.MediaFoundation.dll
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\bin\Windows8\Debug\SharpDX.XAudio2.dll
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\bin\Windows8\Debug\SharpDX.XInput.dll
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\bin\Windows8\Debug\MonoGame.Framework.xml
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\bin\Windows8\Debug\SharpDX.xml
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\bin\Windows8\Debug\SharpDX.XInput.xml
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\bin\Windows8\Debug\SharpDX.Direct2D1.xml
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\bin\Windows8\Debug\SharpDX.Direct3D11.xml
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\bin\Windows8\Debug\SharpDX.DXGI.xml
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\bin\Windows8\Debug\SharpDX.MediaFoundation.xml
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\bin\Windows8\Debug\SharpDX.XAudio2.xml
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\obj\Debug\BeyondYonder.csprojResolveAssemblyReference.cache
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\obj\Debug\BeyondYonder.exe
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\obj\Debug\BeyondYonder.pdb
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\obj\Debug\SharpDX\en-us\SharpDX.Properties.Resources.resw
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\obj\Debug\BeyondYonder.csproj.GenerateResource.Cache
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\obj\Debug\SharpDX.pri
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\obj\Debug\SharpDX\qualifiers.txt
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\obj\Debug\priconfig.xml
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\obj\Debug\priconfig.xml.intermediate
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\obj\Debug\layout.resfiles
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\obj\Debug\layout.resfiles.intermediate
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\obj\Debug\resources.resfiles
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\obj\Debug\resources.resfiles.intermediate
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\obj\Debug\pri.resfiles
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\obj\Debug\pri.resfiles.intermediate
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\obj\Debug\qualifiers.txt
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\obj\Debug\qualifiers.txt.intermediate
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\obj\Debug\ProjectArchitectures.txt
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\bin\Windows8\Debug\Content\Background.png
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\bin\Windows8\Debug\Content\Fonts\Segue.xnb
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\obj\Debug\SharpDX\layout.resfiles
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\obj\Debug\SharpDX\layout.resfiles.intermediate
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\obj\Debug\SharpDX\Resources.resfiles
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\obj\Debug\SharpDX\Resources.resfiles.intermediate
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\obj\Debug\SharpDX\pri.resfiles
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\obj\Debug\SharpDX\pri.resfiles.intermediate
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\obj\Debug\SharpDX\priconfig.xml
+C:\Users\John\Documents\BeyondYonder\BeyondYonder\BeyondYonder\obj\Debug\SharpDX\priconfig.xml.intermediate
