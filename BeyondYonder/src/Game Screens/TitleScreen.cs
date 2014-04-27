@@ -17,8 +17,9 @@ namespace BeyondYonder.src.Game_Screens
     public class TitleScreen : BaseGameState
     {
         #region Field region
-        Texture2D backgroundImage; 
+        Texture2D backgroundImage;
         LinkLabel startLabel;
+        LinkLabel exitLabel;
         #endregion
         #region Constructor region
         public TitleScreen(Game game, GameStateManager manager)
@@ -41,10 +42,21 @@ namespace BeyondYonder.src.Game_Screens
             startLabel.HasFocus = true;
             startLabel.Selected += new EventHandler(startLabel_Selected);
 
+            exitLabel = new LinkLabel();
+            exitLabel.Position = new Vector2(350, 630);
+            exitLabel.Text = "EXIT";
+            exitLabel.Color = Color.Black;
+            exitLabel.TabStop = true;
+            exitLabel.HasFocus = false;
+            exitLabel.Selected += new EventHandler(exitLabel_Selected);
+
             _controlManager.Add(startLabel);
+            _controlManager.Add(exitLabel);
         }
         public override void Update(GameTime gameTime)
         {
+            _controlManager.Update(gameTime, PlayerIndex.One);
+
             base.Update(gameTime);
         }
         public override void Draw(GameTime gameTime)
@@ -53,7 +65,9 @@ namespace BeyondYonder.src.Game_Screens
 
             base.Draw(gameTime);
 
-            _gameRef.SpriteBatch.Draw(backgroundImage, _gameRef.ScreenRectangle, Color.White);
+            _gameRef.SpriteBatch.Draw(backgroundImage,
+                _gameRef.ScreenRectangle, 
+                Color.White);
 
             _controlManager.Draw(_gameRef.SpriteBatch);
 
@@ -61,10 +75,14 @@ namespace BeyondYonder.src.Game_Screens
         }
         #endregion
 
-        #region Title Screen Methods        
-        private void startLabel_Selected(object sender, EventArgs e)     
+        #region Title Screen Methods
+        private void startLabel_Selected(object sender, EventArgs e)
         {
-            _stateManager.PushState(_gameRef.StartMenuScreen);  
+            _stateManager.PushState(_gameRef.GridScreen);
+        }
+        private void exitLabel_Selected(object sender, EventArgs e)
+        {
+            _gameRef.Exit();
         }        
         #endregion
     }

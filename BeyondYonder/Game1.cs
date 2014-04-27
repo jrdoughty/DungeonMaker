@@ -57,8 +57,8 @@ namespace BeyondYonder
             //TitleScreen = new TitleScreen(this, _gameStateManager);
             //StartMenuScreen = new StartMenuScreen(this, _gameStateManager);
             GridScreen = new GridScreen(this, _gameStateManager);
-            //_gameStateManager.ChangeState(TitleScreen);
-            _gameStateManager.ChangeState(GridScreen);
+            _gameStateManager.ChangeState(TitleScreen);
+            //_gameStateManager.ChangeState(GridScreen);
         }
 
         /// <summary>
@@ -106,7 +106,6 @@ namespace BeyondYonder
 
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 this.Exit();
-
             base.Update(gameTime);
         }
 

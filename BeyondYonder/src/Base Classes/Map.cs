@@ -52,14 +52,11 @@ namespace BeyondYonder.src.Base_Classes
                         bLockTheTexture = true;
                         break;
 
-                    //// on holds, if no sprite is selected, we add a new sprite at the
-                    //// hold position and make it our selected sprite. otherwise we
-                    //// remove our selected sprite.
                     case GestureType.Hold:
                         
                         break;
 
-                    //// on drags, we just want to move the selected sprite with the drag
+                    //// on drags, we just want to move the selected map with the drag
                     case GestureType.FreeDrag:
                         if (InputHandler.LastGesture.GestureType == GestureType.FreeDrag && 
                             Math.Abs(InputHandler.CurrentGesture.Position.X - InputHandler.LastGesture.Position.X) < 50 && 
@@ -71,9 +68,6 @@ namespace BeyondYonder.src.Base_Classes
                             mPosition.Y += InputHandler.CurrentGesture.Position.Y - InputHandler.LastGesture.Position.Y;
                         }
                         break;
-
-                    //// on flicks, we want to update the selected sprite's velocity with
-                    //// the flick velocity, which is in pixels per second.
                     //case GestureType.Flick:
                     //    if (selectedSprite != null)
                     //    {
@@ -81,7 +75,7 @@ namespace BeyondYonder.src.Base_Classes
                     //    }
                     //    break;
 
-                    // on pinches, we want to scale the selected sprite
+                    // on pinches, we want to scale the map
                     case GestureType.Pinch:
                         if (mMapSpriteTexture != null && !bLockTheTexture)
                         {

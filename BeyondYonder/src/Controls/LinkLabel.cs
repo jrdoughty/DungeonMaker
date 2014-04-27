@@ -48,6 +48,12 @@ namespace BeyondYonder.src.Controls
          
          public override void HandleInput(PlayerIndex playerIndex) 
          {
+             if (InputHandler.CurrentGesture.Position.X > this.position.X &&
+                 InputHandler.CurrentGesture.Position.X < this.position.X + SpriteFont.MeasureString(Text).X &&
+                 InputHandler.CurrentGesture.Position.Y > this.position.Y &&
+                 InputHandler.CurrentGesture.Position.Y < this.position.Y + SpriteFont.MeasureString(Text).Y
+                 )
+                 HasFocus = true;
              if (!HasFocus)      
                  return;   
              if (//trying new format for sake of clarity
@@ -56,9 +62,9 @@ namespace BeyondYonder.src.Controls
 
                  InputHandler.CurrentGesture.GestureType == GestureType.Hold &&
                  InputHandler.CurrentGesture.Position.X > this.position.X &&
-                 InputHandler.CurrentGesture.Position.X < this.position.X + this.Size.X &&
+                 InputHandler.CurrentGesture.Position.X < this.position.X + SpriteFont.MeasureString(Text).X &&
                  InputHandler.CurrentGesture.Position.Y > this.position.Y &&
-                 InputHandler.CurrentGesture.Position.Y < this.position.Y + this.Size.Y
+                 InputHandler.CurrentGesture.Position.Y < this.position.Y + SpriteFont.MeasureString(Text).Y
                  ) 
                  base.OnSelected(null);  
          }

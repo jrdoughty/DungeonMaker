@@ -44,7 +44,7 @@ namespace BeyondYonder.src.Game_Screens
             startLabel = new LinkLabel();
             startLabel.Position = new Vector2(350, 600);
             startLabel.Text = "Pinch to begin";
-            startLabel.Color = Color.Black;
+            startLabel.Color = Color.Blue;
             startLabel.TabStop = true;
             startLabel.HasFocus = true;
             startLabel.Selected += new EventHandler(startLabel_Selected);

@@ -57,17 +57,21 @@ namespace BeyondYonder.src
                     c.Update(gameTime);  
                 if (c.HasFocus)  
                     c.HandleInput(playerIndex);
-            } 
-            if (InputHandler.ButtonPressed(Buttons.LeftThumbstickUp, playerIndex) ||   
-                InputHandler.ButtonPressed(Buttons.DPadUp, playerIndex) ||       
+            }
+            if (InputHandler.ButtonPressed(Buttons.LeftThumbstickUp, playerIndex) ||
+                InputHandler.ButtonPressed(Buttons.DPadUp, playerIndex) ||
                 InputHandler.KeyPressed(Keys.Up) ||
-                InputHandler.TouchPressed() && InputHandler.CurrentGesture.GestureType == GestureType.Flick && InputHandler.CurrentGesture.Position.Y<InputHandler.CurrentGesture.Position2.Y)      
+                InputHandler.TouchPressed() && InputHandler.CurrentGesture.GestureType == GestureType.Flick && InputHandler.CurrentGesture.Position.Y < InputHandler.LastGesture.Position.Y)
+            {
                 PreviousControl();
-            if (InputHandler.ButtonPressed(Buttons.LeftThumbstickDown, playerIndex) ||    
+            }
+            if (InputHandler.ButtonPressed(Buttons.LeftThumbstickDown, playerIndex) ||
                 InputHandler.ButtonPressed(Buttons.DPadDown, playerIndex) ||
-                InputHandler.TouchPressed() && InputHandler.CurrentGesture.GestureType == GestureType.Flick && InputHandler.CurrentGesture.Position.Y<InputHandler.CurrentGesture.Position2.Y ||        
-                InputHandler.KeyPressed(Keys.Down))     
-                NextControl();    
+                InputHandler.TouchPressed() && InputHandler.CurrentGesture.GestureType == GestureType.Flick && InputHandler.CurrentGesture.Position.Y > InputHandler.LastGesture.Position.Y ||
+                InputHandler.KeyPressed(Keys.Down))
+            {
+                NextControl();
+            }
         }
        
         public void Draw(SpriteBatch spriteBatch)    
@@ -78,22 +82,39 @@ namespace BeyondYonder.src
                     c.Draw(spriteBatch);     
             }    
         }
- 
-        public void NextControl()
-        { 
-            if (Count == 0)  
-                return;   
-            int currentControl = selectedControl;   
-            this[selectedControl].HasFocus = false;     
-            do   
-            {  
-                selectedControl++;    
-                if (selectedControl == Count)       
-                    selectedControl = 0;     
-                if (this[selectedControl].TabStop && this[selectedControl].Enabled)  
-                    break;    
+
+        public void SelectControl(Control control)
+        {
+            if (Count == 0)
+                return;
+            int currentControl = selectedControl;
+            this[selectedControl].HasFocus = false;
+            do
+            {
+                selectedControl++;
+                if (selectedControl == Count)
+                    selectedControl = 0;
+                if (this[selectedControl].TabStop && this[selectedControl].Enabled)
+                    break;
             } while (currentControl != selectedControl);
-            this[selectedControl].HasFocus = true;  
+            this[selectedControl].HasFocus = true;
+        }
+
+        public void NextControl()
+        {
+            if (Count == 0)
+                return;
+            int currentControl = selectedControl;
+            this[selectedControl].HasFocus = false;
+            do
+            {
+                selectedControl++;
+                if (selectedControl == Count)
+                    selectedControl = 0;
+                if (this[selectedControl].TabStop && this[selectedControl].Enabled)
+                    break;
+            } while (currentControl != selectedControl);
+            this[selectedControl].HasFocus = true;
         }      
 
         public void PreviousControl()  
