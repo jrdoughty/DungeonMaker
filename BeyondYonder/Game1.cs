@@ -54,8 +54,8 @@ namespace BeyondYonder
 
             _gameStateManager = new GameStateManager(this);
             Components.Add(_gameStateManager);
-            TitleScreen = new TitleScreen(this, _gameStateManager);
-            StartMenuScreen = new StartMenuScreen(this, _gameStateManager);
+            //TitleScreen = new TitleScreen(this, _gameStateManager);
+            //StartMenuScreen = new StartMenuScreen(this, _gameStateManager);
             GridScreen = new GridScreen(this, _gameStateManager);
             //_gameStateManager.ChangeState(TitleScreen);
             _gameStateManager.ChangeState(GridScreen);

@@ -25,12 +25,9 @@ namespace BeyondYonder.src.Base_Classes
             _rows = rows;
             _cols = cols;
             _gridSize = gridSize;
-        }
 
-        public override void Initialize()
-        {
-            texture = new Texture2D(_game.GraphicsDevice, 1, 1);
-            texture.SetData(new Color[] { Color.Red });
+            texture = new Texture2D(GraphicsDevice, 1, 1);
+            texture.SetData(new Color[] { Color.Black });
 
             centerX = _game.GraphicsDevice.Viewport.Width / 2;
             centerY = _game.GraphicsDevice.Viewport.Height / 2;
@@ -48,22 +45,32 @@ namespace BeyondYonder.src.Base_Classes
             //        _tiles[col][x] = new Tile(_game);
             //    }
             //}
+        }
 
+        public override void Initialize()
+        {
             base.Initialize();
+        }
+
+        protected override void LoadContent()
+        {
+            base.LoadContent();
         }
 
         public override void Draw(GameTime gameTime)
         {
-            var spriteBatch = new SpriteBatch(_game.GraphicsDevice);
+            var spriteBatch = new SpriteBatch(GraphicsDevice);
             spriteBatch.Begin();
-            for (float x = -_cols; x < _cols; x++)
+            var startX = centerX - (_gridSize * _rows / 2);
+            var startY = centerY - (_gridSize * _cols / 2);
+            for (float x = 0; x <= _rows; x++)
             {
-                Rectangle rect = new Rectangle((int)(centerX + x * _gridSize), 0, 1, _rows);
+                Rectangle rect = new Rectangle((int)(x * _gridSize + startX), (int)startY, 1, _gridSize * _cols);
                 spriteBatch.Draw(texture, rect, Color.Red);
             }
-            for (float y = -_rows; y < _rows; y++)
+            for (float y = 0; y <= _cols; y++)
             {
-                Rectangle rect = new Rectangle(0, (int)(centerY + y * _gridSize), _cols, 1);
+                Rectangle rect = new Rectangle((int)startX, (int)(y * _gridSize + startY), _gridSize * _rows, 1);
                 spriteBatch.Draw(texture, rect, Color.Red);
             }
             spriteBatch.End();

@@ -20,6 +20,7 @@ namespace BeyondYonder.src.Game_Screens
         #region Field region
         Texture2D backgroundImage;
         public Map map;
+        public Grid grid;
         LinkLabel startLabel;
         #endregion
         #region Constructor region
@@ -35,7 +36,9 @@ namespace BeyondYonder.src.Game_Screens
             backgroundImage = Content.Load<Texture2D>(@"GameScreenBackground.png");
 
             map = new Map(_gameRef);
+            grid = new Grid(_gameRef,28, 21, 25);
             Components.Add(map);
+            Components.Add(grid);
             base.LoadContent();
 
             startLabel = new LinkLabel();
@@ -58,8 +61,9 @@ namespace BeyondYonder.src.Game_Screens
 
             base.Draw(gameTime);
 
-            _gameRef.SpriteBatch.Draw(backgroundImage, _gameRef.ScreenRectangle, Color.White);
-            map.Draw(gameTime);
+            _gameRef.SpriteBatch.Draw(backgroundImage, _gameRef.ScreenRectangle, Color.Transparent);
+            //map.Draw(gameTime);
+            grid.Draw(gameTime);
             _controlManager.Draw(_gameRef.SpriteBatch);
 
             _gameRef.SpriteBatch.End();

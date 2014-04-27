@@ -110,11 +110,11 @@ namespace BeyondYonder.src.Base_Classes
         public override void Draw(GameTime gameTime)
         {
             
-            if (mMapSpriteTexture != null)
-            {
-                base.Draw(gameTime);
-                _gameRef.SpriteBatch.Draw(mMapSpriteTexture, new Rectangle((int)mPosition.X, (int)mPosition.Y, Width, Height), Color.White);
-            }
+            //if (mMapSpriteTexture != null)
+            //{
+            //    base.Draw(gameTime);
+            //    _gameRef.SpriteBatch.Draw(mMapSpriteTexture, new Rectangle((int)mPosition.X, (int)mPosition.Y, Width, Height), Color.White);
+            //}
         }
 
         protected override void LoadContent()
