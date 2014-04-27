@@ -213,5 +213,9 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
-DungeonMaker/DungeonMaker/obj/x86/Debug/DungeonMaker.csproj.FileListAbsolute.txt
-DungeonMaker/DungeonMaker/obj/x86/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+DungeonMaker/DungeonMaker/obj/
+DungeonMaker/obj/
+DungeonMaker/bin/
+DungeonMaker/DungeonMaker/bin/
+BeyondYonder/obj/
+BeyondYonder/bin/
