@@ -41,6 +41,15 @@
     <AppxPackagedFile Include="C:\Program Files\MSBuild\..\MonoGame\v3.0\Assemblies\Windows8\SharpDX.XInput.dll">
       <PackagePath>SharpDX.XInput.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\John\Documents\DungeonMaker\BeyondYonder\Content\floor.jpg">
+      <PackagePath>Content\floor.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\John\Documents\DungeonMaker\BeyondYonder\Content\Medieval-temple-01-water-1st-floor.jpg">
+      <PackagePath>Content\Medieval-temple-01-water-1st-floor.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\John\Documents\DungeonMaker\BeyondYonder\Content\Burial7.jpg">
+      <PackagePath>Content\Burial7.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\John\Documents\DungeonMaker\BeyondYonder\Content\GameScreenBackground.png">
       <PackagePath>Content\GameScreenBackground.png</PackagePath>
     </AppxPackagedFile>
@@ -62,12 +71,6 @@
     <AppxPackagedFile Include="C:\Users\John\Documents\DungeonMaker\BeyondYonder\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\John\Documents\DungeonMaker\BeyondYonder\Content\Medieval-temple-01-water-1st-floor.jpg">
-      <PackagePath>Content\Medieval-temple-01-water-1st-floor.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\John\Documents\DungeonMaker\BeyondYonder\Content\Burial7.jpg">
-      <PackagePath>Content\Burial7.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\John\Documents\DungeonMaker\BeyondYonder\Content\Fonts\Segue.xnb">
       <PackagePath>Content\Fonts\Segue.xnb</PackagePath>

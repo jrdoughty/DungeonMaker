@@ -17,9 +17,9 @@ namespace BeyondYonder.src.Base_Classes
         float centerX;
         float centerY;
 
-        private Game _game;
+        private Game1 _game;
 
-        public Grid(Game game, int rows = 28, int cols = 21, int gridSize = 38) : base(game)
+        public Grid(Game1 game, int rows = 28, int cols = 21, int gridSize = 38) : base(game)
         {
             _game = game;
             _rows = rows;
@@ -59,8 +59,8 @@ namespace BeyondYonder.src.Base_Classes
 
         public override void Draw(GameTime gameTime)
         {
-            var spriteBatch = new SpriteBatch(GraphicsDevice);
-            spriteBatch.Begin();
+            var spriteBatch = _game.SpriteBatch;
+            //spriteBatch.Begin();
             var startX = centerX - (_gridSize * _rows / 2);
             var startY = centerY - (_gridSize * _cols / 2);
             for (float x = 0; x <= _rows; x++)
@@ -73,7 +73,7 @@ namespace BeyondYonder.src.Base_Classes
                 Rectangle rect = new Rectangle((int)startX, (int)(y * _gridSize + startY), _gridSize * _rows, 1);
                 spriteBatch.Draw(texture, rect, Color.Red);
             }
-            spriteBatch.End();
+            //spriteBatch.End();
             base.Draw(gameTime);
         }
     }

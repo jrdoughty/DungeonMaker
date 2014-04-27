@@ -17,13 +17,13 @@
     <AppXManifest Include="C:\Users\John\Documents\DungeonMaker\BeyondYonder\bin\Windows8\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-04-27T01:12:58.032</Modified>
+      <Modified>2014-04-27T03:46:04.544</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\John\Documents\DungeonMaker\BeyondYonder\bin\Windows8\Debug\BeyondYonder.exe">
       <PackagePath>BeyondYonder.exe</PackagePath>
-      <Modified>2014-04-27T01:21:59.781</Modified>
+      <Modified>2014-04-27T03:46:04.119</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\MSBuild\..\MonoGame\v3.0\Assemblies\Windows8\MonoGame.Framework.dll">
       <PackagePath>MonoGame.Framework.dll</PackagePath>
@@ -57,6 +57,18 @@
       <PackagePath>SharpDX.XInput.dll</PackagePath>
       <Modified>2012-12-28T16:17:32.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\John\Documents\DungeonMaker\BeyondYonder\Content\floor.jpg">
+      <PackagePath>Content\floor.jpg</PackagePath>
+      <Modified>2014-04-27T03:44:03.664</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\John\Documents\DungeonMaker\BeyondYonder\Content\Medieval-temple-01-water-1st-floor.jpg">
+      <PackagePath>Content\Medieval-temple-01-water-1st-floor.jpg</PackagePath>
+      <Modified>2014-04-27T01:11:43.697</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\John\Documents\DungeonMaker\BeyondYonder\Content\Burial7.jpg">
+      <PackagePath>Content\Burial7.jpg</PackagePath>
+      <Modified>2014-04-26T17:54:23.207</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\John\Documents\DungeonMaker\BeyondYonder\Content\GameScreenBackground.png">
       <PackagePath>Content\GameScreenBackground.png</PackagePath>
       <Modified>2014-04-26T23:04:48.320</Modified>
@@ -85,21 +97,13 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2014-02-09T19:17:17.980</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\John\Documents\DungeonMaker\BeyondYonder\Content\Medieval-temple-01-water-1st-floor.jpg">
-      <PackagePath>Content\Medieval-temple-01-water-1st-floor.jpg</PackagePath>
-      <Modified>2014-04-27T01:11:43.697</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\John\Documents\DungeonMaker\BeyondYonder\Content\Burial7.jpg">
-      <PackagePath>Content\Burial7.jpg</PackagePath>
-      <Modified>2014-04-26T17:54:23.207</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\John\Documents\DungeonMaker\BeyondYonder\Content\Fonts\Segue.xnb">
       <PackagePath>Content\Fonts\Segue.xnb</PackagePath>
       <Modified>2014-03-05T02:19:09.150</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\John\Documents\DungeonMaker\BeyondYonder\bin\Windows8\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-04-27T01:12:57.354</Modified>
+      <Modified>2014-04-27T03:46:04.374</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

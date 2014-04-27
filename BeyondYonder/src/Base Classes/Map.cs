@@ -150,19 +150,19 @@ namespace BeyondYonder.src.Base_Classes
 
         public override void Draw(GameTime gameTime)
         {
-            
-            //if (mMapSpriteTexture != null)
-            //{
-            //    base.Draw(gameTime);
-            //    _gameRef.SpriteBatch.Draw(mMapSpriteTexture, new Rectangle((int)mPosition.X, (int)mPosition.Y, Width, Height), Color.White);
-            //}
+
+            if (mMapSpriteTexture != null)
+            {
+                _gameRef.SpriteBatch.Draw(mMapSpriteTexture, new Rectangle((int)mPosition.X, (int)mPosition.Y, Width, Height), Color.White);
+            }
+            base.Draw(gameTime);
         }
 
         protected override void LoadContent()
         {
             string path = @"C:\\Users\\John\\Pictures\\Burial7.jpg";
             ContentManager Content = _gameRef.Content;
-            mMapSpriteTexture = Content.Load<Texture2D>(@"Medieval-temple-01-water-1st-floor.jpg");
+            mMapSpriteTexture = Content.Load<Texture2D>(@"floor.jpg");
             Height = mMapSpriteTexture.Height;
             Width = mMapSpriteTexture.Width;
             //mMapSpriteTexture = Game.Content.Load<Texture2D>(@"Burial7.png");

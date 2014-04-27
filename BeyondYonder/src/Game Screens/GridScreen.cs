@@ -36,7 +36,7 @@ namespace BeyondYonder.src.Game_Screens
             backgroundImage = Content.Load<Texture2D>(@"GameScreenBackground.png");
 
             map = new Map(_gameRef);
-            grid = new Grid(_gameRef,28, 21, 25);
+            grid = new Grid(_gameRef,38, 21, 25);
             Components.Add(map);
             Components.Add(grid);
             base.LoadContent();
@@ -64,7 +64,7 @@ namespace BeyondYonder.src.Game_Screens
             base.Draw(gameTime);
 
             _gameRef.SpriteBatch.Draw(backgroundImage, _gameRef.ScreenRectangle, Color.Transparent);
-            //map.Draw(gameTime);
+            map.Draw(gameTime);
             grid.Draw(gameTime);
             _controlManager.Draw(_gameRef.SpriteBatch);
 
