@@ -20,7 +20,7 @@ namespace BeyondYonder.src.Game_Screens
         #region Field region
         Texture2D backgroundImage;
         public Map map;
-        //LinkLabel startLabel;
+        LinkLabel startLabel;
         #endregion
         #region Constructor region
         public GridScreen(Game game, GameStateManager manager)
@@ -38,15 +38,15 @@ namespace BeyondYonder.src.Game_Screens
             Components.Add(map);
             base.LoadContent();
 
-            //startLabel = new LinkLabel();
-            //startLabel.Position = new Vector2(350, 600);
-            //startLabel.Text = "Press ENTER to begin";
-            //startLabel.Color = Color.Black;
-            //startLabel.TabStop = true;
-            //startLabel.HasFocus = true;
-            //startLabel.Selected += new EventHandler(startLabel_Selected);
+            startLabel = new LinkLabel();
+            startLabel.Position = new Vector2(350, 600);
+            startLabel.Text = "Pinch to begin";
+            startLabel.Color = Color.Black;
+            startLabel.TabStop = true;
+            startLabel.HasFocus = true;
+            startLabel.Selected += new EventHandler(startLabel_Selected);
 
-            //_controlManager.Add(startLabel);
+            _controlManager.Add(startLabel);
         }
         public override void Update(GameTime gameTime)
         {

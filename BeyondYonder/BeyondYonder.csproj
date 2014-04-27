@@ -155,6 +155,7 @@
       <SubType>Designer</SubType>
     </AppxManifest>
     <Content Include="Content\GameScreenBackground.png" />
+    <Content Include="Content\Medieval-temple-01-water-1st-floor.jpg" />
     <None Include="BeyondYonder_TemporaryKey.pfx" />
     <Content Include="Content\Burial7.jpg" />
     <Content Include="Content\Fonts\Segue.xnb">

@@ -63,6 +63,9 @@
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\John\Documents\DungeonMaker\BeyondYonder\Content\Medieval-temple-01-water-1st-floor.jpg">
+      <PackagePath>Content\Medieval-temple-01-water-1st-floor.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\John\Documents\DungeonMaker\BeyondYonder\Content\Burial7.jpg">
       <PackagePath>Content\Burial7.jpg</PackagePath>
     </AppxPackagedFile>
