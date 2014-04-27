@@ -42,6 +42,7 @@ namespace BeyondYonder.src.Base_Classes
 
         public override void Update(GameTime gameTime)
         {
+            #region Touch
             if (InputHandler.Touching())
             {
                 switch (InputHandler.CurrentGesture.GestureType)
@@ -62,7 +63,7 @@ namespace BeyondYonder.src.Base_Classes
                     case GestureType.FreeDrag:
                         if (InputHandler.LastGesture.GestureType == GestureType.FreeDrag && 
                             Math.Abs(InputHandler.CurrentGesture.Position.X - InputHandler.LastGesture.Position.X) < 50 && 
-                            Math.Abs(InputHandler.CurrentGesture.Position.X - InputHandler.LastGesture.Position.X) < 50 && 
+                            Math.Abs(InputHandler.CurrentGesture.Position.Y - InputHandler.LastGesture.Position.Y) < 50 && 
                             InputHandler.LastGesture.Position.X > 0 && 
                             InputHandler.LastGesture.Position.Y > 0 && !bLockTheTexture)
                         {
@@ -104,6 +105,46 @@ namespace BeyondYonder.src.Base_Classes
                         break;
                 }
             }
+            #endregion
+            if (InputHandler.CurrentMouseState.LeftButton == ButtonState.Pressed && InputHandler.CurrentMouseState.RightButton == ButtonState.Pressed)
+            {
+                bLockTheTexture = true;
+            }
+            else if (InputHandler.CurrentMouseState.LeftButton == ButtonState.Pressed)
+            {
+                if (InputHandler.LastMouseState.LeftButton == ButtonState.Pressed)
+                {
+                    if (
+                            Math.Abs(InputHandler.CurrentMouseState.X - InputHandler.LastMouseState.X) < 50 &&
+                            Math.Abs(InputHandler.CurrentMouseState.Y - InputHandler.LastMouseState.Y) < 50 &&
+                            InputHandler.LastMouseState.X > 0 &&
+                            InputHandler.LastMouseState.Y > 0 && !bLockTheTexture)
+                    {
+                        mPosition.X += InputHandler.CurrentMouseState.X - InputHandler.LastMouseState.X;
+                        mPosition.Y += InputHandler.CurrentMouseState.Y - InputHandler.LastMouseState.Y;
+                    }
+                }
+            }
+            else if (InputHandler.CurrentMouseState.RightButton == ButtonState.Pressed)
+            {
+                if (InputHandler.LastMouseState.RightButton == ButtonState.Pressed)
+                {
+                    if (
+                            Math.Abs(InputHandler.CurrentMouseState.X - InputHandler.LastMouseState.X) < 50 &&
+                            Math.Abs(InputHandler.CurrentMouseState.Y - InputHandler.LastMouseState.Y) < 50 &&
+                            InputHandler.LastMouseState.X > 0 &&
+                            InputHandler.LastMouseState.Y > 0 && !bLockTheTexture)
+                    {
+
+                        // calculate the difference between the two and use that to alter the scale
+                        float scaleChange = ((InputHandler.CurrentMouseState.X - InputHandler.LastMouseState.X + 
+                            InputHandler.CurrentMouseState.Y - InputHandler.LastMouseState.Y) * .01f);
+                        Height = (int)(Height * (1 + scaleChange));
+                        Width = (int)(Width * (1 + scaleChange));
+                    }
+                }
+            }
+
             base.Update(gameTime);
         }
 

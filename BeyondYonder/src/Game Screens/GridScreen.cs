@@ -51,10 +51,12 @@ namespace BeyondYonder.src.Game_Screens
 
             _controlManager.Add(startLabel);
         }
+
         public override void Update(GameTime gameTime)
         {
             base.Update(gameTime);
         }
+
         public override void Draw(GameTime gameTime)
         {
             _gameRef.SpriteBatch.Begin(); 
