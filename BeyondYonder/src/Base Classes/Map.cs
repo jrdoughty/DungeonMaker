@@ -20,8 +20,8 @@ namespace BeyondYonder.src.Base_Classes
 
         protected Game1 _gameRef;
 
-        public int Height { get; set; }
-        public int Width { get; set; }
+        public float Height { get; set; }
+        public float Width { get; set; }
 
         public bool bLockTheTexture = false;
 
@@ -93,8 +93,8 @@ namespace BeyondYonder.src.Base_Classes
 
                             // calculate the difference between the two and use that to alter the scale
                             float scaleChange = ((d - dOld) * .01f );
-                            Height =(int)(Height * (1 + scaleChange));
-                            Width = (int)(Width * (1 + scaleChange));
+                            Height *= 1 + scaleChange;
+                            Width *= 1 + scaleChange;
                         }
                         break;
                 }
@@ -133,8 +133,8 @@ namespace BeyondYonder.src.Base_Classes
                         // calculate the difference between the two and use that to alter the scale
                         float scaleChange = ((InputHandler.CurrentMouseState.X - InputHandler.LastMouseState.X + 
                             InputHandler.CurrentMouseState.Y - InputHandler.LastMouseState.Y) * .01f);
-                        Height = (int)(Height * (1 + scaleChange));
-                        Width = (int)(Width * (1 + scaleChange));
+                        Height *= 1 + scaleChange;
+                        Width *= 1 + scaleChange;
                     }
                 }
             }
@@ -147,9 +147,18 @@ namespace BeyondYonder.src.Base_Classes
 
             if (mMapSpriteTexture != null)
             {
-                _gameRef.SpriteBatch.Draw(mMapSpriteTexture, new Rectangle((int)mPosition.X, (int)mPosition.Y, Width, Height), Color.White);
+                _gameRef.SpriteBatch.Draw(mMapSpriteTexture, new Rectangle((int)mPosition.X, (int)mPosition.Y, (int)Width, (int)Height), Color.White);
             }
             base.Draw(gameTime);
+        }
+
+        public string GetWidth()
+        {
+            return Width.ToString();
+        }
+        public string GetHeight()
+        {
+            return Height.ToString();
         }
 
         protected override void LoadContent()

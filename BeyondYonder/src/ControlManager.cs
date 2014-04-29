@@ -54,7 +54,14 @@ namespace BeyondYonder.src
             foreach (Control c in this) 
             { 
                 if (c.Enabled)
-                    c.Update(gameTime);  
+                    c.Update(gameTime);
+                //if (c is LinkLabel &&
+                //    InputHandler.CurrentGesture.Position.X > (LinkLabel)c.position.X &&
+                // InputHandler.CurrentGesture.Position.X < (LinkLabel)c.position.X + SpriteFont.MeasureString(Text).X &&
+                // InputHandler.CurrentGesture.Position.Y > (LinkLabel)c.position.Y &&
+                // InputHandler.CurrentGesture.Position.Y < (LinkLabel)c.position.Y + SpriteFont.MeasureString(Text).Y
+                // )
+                //    HasFocus = true;
                 if (c.HasFocus)  
                     c.HandleInput(playerIndex);
             }

@@ -39,8 +39,8 @@ namespace BeyondYonder.src.Controls
          }
          
          public override void Draw(SpriteBatch spriteBatch) 
-         { 
-             if (hasFocus)    
+         {
+             if (HasFocus)    
                  spriteBatch.DrawString(SpriteFont, Text, Position, selectedColor);
              else     
                  spriteBatch.DrawString(SpriteFont, Text, Position, Color);  
@@ -54,8 +54,8 @@ namespace BeyondYonder.src.Controls
                  InputHandler.CurrentGesture.Position.Y < this.position.Y + SpriteFont.MeasureString(Text).Y
                  )
                  HasFocus = true;
-             if (!HasFocus)      
-                 return;   
+             //if (!HasFocus)      
+             //    return;   
              if (//trying new format for sake of clarity
                  InputHandler.KeyReleased(Keys.Enter) ||   
                  InputHandler.ButtonReleased(Buttons.A, playerIndex)||
