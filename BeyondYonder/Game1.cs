@@ -49,12 +49,11 @@ namespace BeyondYonder
 
             _graphics.ApplyChanges();
             Content.RootDirectory = "Content";
-
             Components.Add(new InputHandler(this));
 
             _gameStateManager = new GameStateManager(this);
             Components.Add(_gameStateManager);
-            //TitleScreen = new TitleScreen(this, _gameStateManager);
+            TitleScreen = new TitleScreen(this, _gameStateManager);
             //StartMenuScreen = new StartMenuScreen(this, _gameStateManager);
             GridScreen = new GridScreen(this, _gameStateManager);
             _gameStateManager.ChangeState(TitleScreen);

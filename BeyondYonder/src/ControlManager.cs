@@ -55,15 +55,22 @@ namespace BeyondYonder.src
             { 
                 if (c.Enabled)
                     c.Update(gameTime);
-                //if (c is LinkLabel &&
-                //    InputHandler.CurrentGesture.Position.X > (LinkLabel)c.position.X &&
-                // InputHandler.CurrentGesture.Position.X < (LinkLabel)c.position.X + SpriteFont.MeasureString(Text).X &&
-                // InputHandler.CurrentGesture.Position.Y > (LinkLabel)c.position.Y &&
-                // InputHandler.CurrentGesture.Position.Y < (LinkLabel)c.position.Y + SpriteFont.MeasureString(Text).Y
-                // )
-                //    HasFocus = true;
+                
                 if (c.HasFocus)  
                     c.HandleInput(playerIndex);
+                else if (
+                    InputHandler.CurrentMouseState.Y > c.Position.Y &&
+                    InputHandler.CurrentMouseState.Y < c.Position.Y + c.SpriteFont.MeasureString(c.Text).Y &&
+                    InputHandler.CurrentMouseState.X > c.Position.X &&
+                    InputHandler.CurrentMouseState.X < c.Position.X + c.SpriteFont.MeasureString(c.Text).X
+                    ||
+                    InputHandler.CurrentGesture.Position.X > c.Position.X &&
+                     InputHandler.CurrentGesture.Position.X < c.Position.X + SpriteFont.MeasureString(c.Text).X &&
+                     InputHandler.CurrentGesture.Position.Y > c.Position.Y &&
+                     InputHandler.CurrentGesture.Position.Y < c.Position.Y + SpriteFont.MeasureString(c.Text).Y
+                    ){
+                        SelectControl(c);
+                }
             }
             if (InputHandler.ButtonPressed(Buttons.LeftThumbstickUp, playerIndex) ||
                 InputHandler.ButtonPressed(Buttons.DPadUp, playerIndex) ||

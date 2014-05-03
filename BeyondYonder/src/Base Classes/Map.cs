@@ -100,6 +100,7 @@ namespace BeyondYonder.src.Base_Classes
                 }
             }
             #endregion
+            #region Mouse
             if (InputHandler.CurrentMouseState.LeftButton == ButtonState.Pressed && InputHandler.CurrentMouseState.RightButton == ButtonState.Pressed)
             {
                 bLockTheTexture = true;
@@ -112,7 +113,8 @@ namespace BeyondYonder.src.Base_Classes
                             Math.Abs(InputHandler.CurrentMouseState.X - InputHandler.LastMouseState.X) < 50 &&
                             Math.Abs(InputHandler.CurrentMouseState.Y - InputHandler.LastMouseState.Y) < 50 &&
                             InputHandler.LastMouseState.X > 0 &&
-                            InputHandler.LastMouseState.Y > 0 && !bLockTheTexture)
+                            InputHandler.LastMouseState.Y > 0 && 
+                            !bLockTheTexture)
                     {
                         mPosition.X += InputHandler.CurrentMouseState.X - InputHandler.LastMouseState.X;
                         mPosition.Y += InputHandler.CurrentMouseState.Y - InputHandler.LastMouseState.Y;
@@ -127,7 +129,8 @@ namespace BeyondYonder.src.Base_Classes
                             Math.Abs(InputHandler.CurrentMouseState.X - InputHandler.LastMouseState.X) < 50 &&
                             Math.Abs(InputHandler.CurrentMouseState.Y - InputHandler.LastMouseState.Y) < 50 &&
                             InputHandler.LastMouseState.X > 0 &&
-                            InputHandler.LastMouseState.Y > 0 && !bLockTheTexture)
+                            InputHandler.LastMouseState.Y > 0 && 
+                            !bLockTheTexture)
                     {
 
                         // calculate the difference between the two and use that to alter the scale
@@ -138,7 +141,7 @@ namespace BeyondYonder.src.Base_Classes
                     }
                 }
             }
-
+            #endregion
             base.Update(gameTime);
         }
 
@@ -163,7 +166,7 @@ namespace BeyondYonder.src.Base_Classes
 
         protected override void LoadContent()
         {
-            string path = @"C:\\Users\\John\\Pictures\\Burial7.jpg";
+            //string path = @"C:\\Users\\John\\Pictures\\Burial7.jpg";//Need system to load local files
             ContentManager Content = _gameRef.Content;
             mMapSpriteTexture = Content.Load<Texture2D>(@"floor.jpg");
             Height = mMapSpriteTexture.Height;

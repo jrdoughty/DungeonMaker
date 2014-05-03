@@ -55,6 +55,7 @@ namespace BeyondYonder.src.Game_Screens
         public override void Update(GameTime gameTime)
         {
             base.Update(gameTime);
+            startLabel.Text = "Width: " + map.GetWidth() + " Height: " + map.GetHeight() ;
         }
 
         public override void Draw(GameTime gameTime)

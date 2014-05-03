@@ -35,17 +35,17 @@ namespace BeyondYonder.src.Game_Screens
             base.LoadContent();
 
             startLabel = new LinkLabel();
-            startLabel.Position = new Vector2(350, 600);
-            startLabel.Text = "Press ENTER to begin";
-            startLabel.Color = Color.Black;
+            startLabel.Position = new Vector2(50, 50);
+            startLabel.Text = "Map Editor";
+            startLabel.Color = Color.White;
             startLabel.TabStop = true;
             startLabel.HasFocus = true;
             startLabel.Selected += new EventHandler(startLabel_Selected);
 
             exitLabel = new LinkLabel();
-            exitLabel.Position = new Vector2(350, 630);
+            exitLabel.Position = new Vector2(50, 125);
             exitLabel.Text = "EXIT";
-            exitLabel.Color = Color.Black;
+            exitLabel.Color = Color.White;
             exitLabel.TabStop = true;
             exitLabel.HasFocus = false;
             exitLabel.Selected += new EventHandler(exitLabel_Selected);

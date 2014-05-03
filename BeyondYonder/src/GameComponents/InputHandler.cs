@@ -38,6 +38,8 @@ namespace BeyondYonder.src.GameComponents
         #region Mouse Field Region
         static MouseState mouseState;
         static MouseState lastMouseState;
+        private int maxFramesSinceMouseMovement = 40;
+        static int framesSinceMouseMove;
         #endregion
         #endregion
         #region Static Get Property Region
@@ -97,11 +99,12 @@ namespace BeyondYonder.src.GameComponents
             : base(game)
         {
             keyboardState = Keyboard.GetState();
-
+            framesSinceMouseMove = maxFramesSinceMouseMovement;
             gamePadStates = new GamePadState[Enum.GetValues(typeof(PlayerIndex)).Length];
 
             foreach (PlayerIndex index in Enum.GetValues(typeof(PlayerIndex)))
                 gamePadStates[(int)index] = GamePad.GetState(index);
+
 
             touchState = TouchPanel.GetState();
         }
@@ -138,6 +141,26 @@ namespace BeyondYonder.src.GameComponents
                 lastGesture = gesture;
                 gesture = TouchPanel.ReadGesture();
             }
+            if (
+                mouseState.X != lastMouseState.X
+                ||
+                mouseState.Y != lastMouseState.Y
+                ||
+                mouseState.LeftButton == ButtonState.Pressed
+                ||
+                mouseState.RightButton == ButtonState.Pressed
+                )
+            {
+                framesSinceMouseMove = 0;
+                Game.IsMouseVisible = true;
+            }
+            else
+            {
+                framesSinceMouseMove++;
+                if (framesSinceMouseMove > maxFramesSinceMouseMovement)
+                    Game.IsMouseVisible = false;
+            }
+                                   
             base.Update(gameTime);
         }
         #endregion

@@ -23,7 +23,7 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\John\Documents\DungeonMaker\BeyondYonder\bin\Windows8\Debug\BeyondYonder.exe">
       <PackagePath>BeyondYonder.exe</PackagePath>
-      <Modified>2014-04-27T03:46:04.119</Modified>
+      <Modified>2014-05-03T05:47:54.858</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\MSBuild\..\MonoGame\v3.0\Assemblies\Windows8\MonoGame.Framework.dll">
       <PackagePath>MonoGame.Framework.dll</PackagePath>
@@ -75,7 +75,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\John\Documents\DungeonMaker\BeyondYonder\Content\Background.png">
       <PackagePath>Content\Background.png</PackagePath>
-      <Modified>2014-02-10T02:20:42.369</Modified>
+      <Modified>2014-05-03T04:59:02.430</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\John\Documents\DungeonMaker\BeyondYonder\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>
@@ -99,7 +99,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\John\Documents\DungeonMaker\BeyondYonder\Content\Fonts\Segue.xnb">
       <PackagePath>Content\Fonts\Segue.xnb</PackagePath>
-      <Modified>2014-03-05T02:19:09.150</Modified>
+      <Modified>2014-05-03T02:40:47.182</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\John\Documents\DungeonMaker\BeyondYonder\bin\Windows8\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
